@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+
+    <!-- include mathjs library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/12.4.2/math.js" integrity="sha512-34c+czbe1JJMtTH6ebtsJdIa1K3lNsxDC92M3PBI0bACg7nu+DhHwfRS2Zc2qtbyPWKHLTgoxsMrArG4Myx4AQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <title>Calculator</title>
+  </head>
+  <body>
+   
+    <div class="d-flex flex-column justify-content-center align-items-center" style="height: 100vh;">
+        <div id="board" class=" border border-dark" style="width: fit-content;">
+            <div id="display" class="border border-dark bg-dark text-white text-end m" style="height: 60px;">
+                <div class="" id="formulascreen"></div>
+                <div class="" id="outputscreen"></div>
+            </div>
+            <div class="m-1">
+                <button type="button" class="btn btn-lg btn-danger" onclick="calculate(this)" value="AC">AC</button>
+                <button type="button" class="btn btn-lg btn-info" onclick="calculate(this)" value="%">%</button>
+                <button type="button" class="btn btn-lg btn-warning" onclick="calculate(this)" value="DEL">DEL</button>
+                <button type="button" class="btn btn-lg btn-info" onclick="calculate(this)" value="/">/</button>
+            </div>
+
+            <div class="m-1">
+                <button type="button" class="btn btn-lg btn-dark" onclick="calculate(this)" value="7">7</button>
+                <button type="button" class="btn btn-lg btn-dark" onclick="calculate(this)" value="8">8</button>
+                <button type="button" class="btn btn-lg btn-dark" onclick="calculate(this)" value="9">9</button>
+                <button type="button" class="btn btn-lg btn-info" onclick="calculate(this)" value="*">x</button>
+            </div>
+
+            <div class="m-1">
+                <button type="button" class="btn btn-lg btn-dark" onclick="calculate(this)" value="4">4</button>
+                <button type="button" class="btn btn-lg btn-dark" onclick="calculate(this)" value="5">5</button>
+                <button type="button" class="btn btn-lg btn-dark" onclick="calculate(this)" value="6">6</button>
+                <button type="button" class="btn btn-lg btn-info" onclick="calculate(this)" value="-">-</button>
+            </div>
+
+            <div class="m-1">
+                <button type="button" class="btn btn-lg btn-dark" onclick="calculate(this)" value="1">1</button>
+                <button type="button" class="btn btn-lg btn-dark" onclick="calculate(this)" value="2">2</button>
+                <button type="button" class="btn btn-lg btn-dark" onclick="calculate(this)" value="3">3</button>
+                <button type="button" class="btn btn-lg btn-info" onclick="calculate(this)" value="+">+</button>
+            </div>
+
+            <div class="m-1">
+                <button type="button" class="btn btn-lg btn-dark" onclick="calculate(this)" value="00">00</button>
+                <button id="zero" type="button" class="btn btn-lg btn-dark" onclick="calculate(this)" value="0">0</button>
+                <button type="button" class="btn btn-lg btn-dark" onclick="calculate(this)" value=".">.</button>
+                <button id="equal" type="button" class="btn btn-lg btn-info" onclick="calculate(this)" value="=">=</button>
+            </div>
+        </div>
+        <div class="design">
+            <p>Designed by:</p>
+            <h6>Coder</h6>
+        </div>
+    </div>
+
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <script src="calculator.js"></script>
+  </body>
+</html>

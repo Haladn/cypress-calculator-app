@@ -1,0 +1,56 @@
+/* .calculator-form{
+    background-color: rgb(199, 199, 199);
+    margin: 110px;
+}
+
+.form-label{
+    font-weight: 600;
+    margin-left: 20px;
+    margin-top: 15px;
+}
+
+.btn{
+    background-color: gray;
+    width: 100px;
+    font-weight: 700;
+    margin-right: 5px;
+    margin-left: 10px;
+    margin-bottom: 5px;
+   
+}
+.form-row{
+    margin-top: 10px;
+} */
+
+.cw{
+    width: 50px;
+}
+
+.btn{
+    width: 70px;
+}
+
+#formulascreen{
+    height: 20px;
+    padding-top: 5px;
+    padding-right: 5px;
+    /* font-size:larger; */
+}
+
+#outputscreen{
+    height: 40px;
+    padding-right: 5px;
+    font-size:large;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    font-weight: bolder;
+}
+
+.design{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.design h6{
+    color:red;
+}
